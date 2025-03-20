@@ -1,4 +1,4 @@
-# Learn-Along
+# BarterBrains
 # 📌 Peer-to-Peer Skill Barter Platform  
 
 ## 🌟 Overview  
