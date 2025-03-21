@@ -1,9 +1,11 @@
 # BarterBrains
-# 📌 Peer-to-Peer Skill Barter Platform  
 
-## 🌟 Overview  
+## 📌 Peer-to-Peer Skill Barter Platform  
 
+### 🌟 Overview  
 Many people have skills but lack financial resources to learn new ones. This platform **removes the money barrier** by enabling **users to exchange skills instead of paying**.  
+
+---
 
 ## 🚀 Features  
 
@@ -34,6 +36,8 @@ Many people have skills but lack financial resources to learn new ones. This pla
 ### **5️⃣ AI Learning Assistant (Bonus Feature)**  
 - **GPT-powered Chatbot** for personalized learning roadmaps & practice quizzes  
 
+---
+
 ## 🔗 Tech Stack  
 
 | **Component**    | **Technology** |
@@ -43,9 +47,10 @@ Many people have skills but lack financial resources to learn new ones. This pla
 | Database        | **MongoDB (Mongoose)** |
 | Real-time Chat  | **WebRTC + Socket.io** |
 | Authentication  | **OAuth (Google, Facebook, GitHub) + JWT** |
-| AI Matching    | **OpenAI API** |
+| AI Matching     | **OpenAI API** |
 | Notifications   | **NodeMailer + Web Push** |
 
+---
 
 ## 🎯 Real-World Impact  
 
@@ -54,3 +59,43 @@ Many people have skills but lack financial resources to learn new ones. This pla
 ✅ **Fosters global networking** – Skill-building without financial barriers  
 
 ---
+
+## 📅 Development Milestones  
+
+### **Week 1: Project Setup & Authentication**  
+- **Day 1-2:** Project setup (Repo, folder structure, install dependencies)  
+- **Day 3-4:** Implement OAuth (Google, GitHub, Facebook) & JWT authentication  
+- **Day 5-6:** User profile setup (basic UI, MongoDB schema, CRUD operations)  
+- **Day 7:** Testing & bug fixes  
+
+### **Week 2: AI Skill Matching & Search**  
+- **Day 8-9:** Implement AI-based matching logic using OpenAI API  
+- **Day 10-11:** Advanced search filters (skill category, experience, location)  
+- **Day 12:** Optimize API calls & implement pagination  
+- **Day 13-14:** Testing & refining search/matching features  
+
+### **Week 3: Learning Sessions & Communication**  
+- **Day 15-16:** Integrate WebRTC for live video calls  
+- **Day 17-18:** Implement Socket.io for real-time chat  
+- **Day 19:** Build session booking system (Google Calendar integration)  
+- **Day 20-21:** Email & WhatsApp notifications for session reminders  
+
+### **Week 4: Gamification & Community Features**  
+- **Day 22-23:** Develop skill points economy (earn/spend system)  
+- **Day 24-25:** Create badges & leaderboards for engagement  
+- **Day 26:** Implement AI-powered public Q&A forum  
+- **Day 27-28:** Final testing, UI refinements, and deployment prep  
+
+### **Week 5: Final Testing & Deployment**  
+- **Day 29-30:** Full project testing & bug fixes  
+- **Day 31:** Deployment & documentation finalization  
+
+---
+
+## 🎯 Next Steps  
+✅ **Post-launch improvements** – Gather user feedback and refine features  
+✅ **Scale AI learning assistant** – Enhance chatbot capabilities  
+✅ **Mobile app development** – Expand platform accessibility  
+
+---
+
