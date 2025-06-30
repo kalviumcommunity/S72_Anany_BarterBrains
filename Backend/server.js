@@ -2,6 +2,8 @@ import express from 'express';
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 import skillRoutes from './routes/skillRoutes.js';
+import userRoutes from './routes/userRoutes.js';
+import sessionRoutes from './routes/sessionRoutes.js';
 
 dotenv.config();
 
@@ -18,6 +20,8 @@ mongoose.connect(process.env.MONGO_URI, {
 
 // Routes
 app.use('/api/skills', skillRoutes);
+app.use('/api/users', userRoutes);
+app.use('/api/sessions', sessionRoutes);
 
 // Server
 const PORT = process.env.PORT || 5000;
