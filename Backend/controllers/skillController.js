@@ -1,6 +1,5 @@
 import Skill from '../models/Skill.js';
 
-
 // GET all skills (READ)
 export const getAllSkills = async (req, res) => {
   try {
@@ -13,14 +12,14 @@ export const getAllSkills = async (req, res) => {
 
 // POST add new skill (WRITE)
 export const addSkill = async (req, res) => {
-  const { name, category, level } = req.body;
+  const { name, category, description } = req.body;
 
-  if (!name || !category || !level) {
-    return res.status(400).json({ message: 'Please provide name, category, and level' });
+  if (!name || !category || !description) {
+    return res.status(400).json({ message: 'Please provide name, category, and description' });
   }
 
   try {
-    const newSkill = new Skill({ name, category, level });
+    const newSkill = new Skill({ name, category, description });
     await newSkill.save();
     res.status(201).json(newSkill);
   } catch (err) {
@@ -31,7 +30,7 @@ export const addSkill = async (req, res) => {
 // PUT update skill
 export const updateSkill = async (req, res) => {
   const { id } = req.params;
-  const { name, category, level } = req.body;
+  const { name, category, description } = req.body;
 
   try {
     const skill = await Skill.findById(id);
@@ -39,7 +38,7 @@ export const updateSkill = async (req, res) => {
 
     if (name) skill.name = name;
     if (category) skill.category = category;
-    if (level) skill.level = level;
+    if (description) skill.description = description;
 
     await skill.save();
     res.json({ message: 'Skill updated', skill });
